@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+
+        function buy(name, goods, fn) {
+            fn && fn(name, goods)
+    }
+
+        buy('xiaoming', 'apple', function (name, goods) {
+            alert(name + ' buy ' + goods);
+            alert("shopping finish");
+
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>
